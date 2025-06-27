@@ -55,4 +55,31 @@ describe("ZellerCustomerList", () => {
       role: "ADMIN",
     });
   });
+
+  it("Search customers", async () => {
+    const { queryByText, queryByTestId, getByPlaceholderText } = render(
+      <ZellerCustomerList {...mockProps} />
+    );
+
+    const searchBar = getByPlaceholderText("Search Customer");
+    expect(searchBar).toBeTruthy();
+
+    await waitFor(() => {
+      expect(queryByTestId("loading-indicator")).toBeNull();
+    });
+
+    fireEvent.changeText(searchBar, "David");
+    await waitFor(() => {
+      expect(queryByText("David")).toBeTruthy();
+      expect(queryByText("Ryan Muller")).toBeNull();
+      expect(queryByText("Chris Miller")).toBeNull();
+    });
+
+    fireEvent.changeText(searchBar, "");
+    await waitFor(() => {
+      expect(queryByText("David")).toBeTruthy();
+      expect(queryByText("Ryan Muller")).toBeTruthy();
+      expect(queryByText("Chris Miller")).toBeTruthy();
+    });
+  });
 });
