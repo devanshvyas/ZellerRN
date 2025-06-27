@@ -9,6 +9,7 @@ import {
   SafeAreaView,
   StyleSheet,
   Text,
+  TextInput,
   View,
 } from "react-native";
 import { capitalizeFirst } from "../utils/stringutils";
@@ -21,12 +22,16 @@ type Props = NativeStackScreenProps<RootStackParamList, "Home">;
 export default function ZellerCustomerList({ navigation }: Props) {
   const [role, setRole] = useState<"ADMIN" | "MANAGER">("ADMIN");
   const [customers, setCustomers] = useState<ZellerCustomer[]>([]);
+  const [filteredCustomers, setFilteredCustomers] = useState<ZellerCustomer[]>(
+    []
+  );
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
     fetchZellerCustomerList(role).then((res) => {
       setCustomers(res);
+      setFilteredCustomers(res);
       console.log(customers.length);
       setLoading(false);
     });
@@ -56,6 +61,24 @@ export default function ZellerCustomerList({ navigation }: Props) {
         <Text style={styles.title} testID="userTitle">
           {capitalizeFirst(role)} Users
         </Text>
+        <TextInput
+          style={{
+            borderRadius: 20,
+            borderWidth: 1,
+            borderColor: Colors.grey,
+            padding: 15,
+            marginVertical: 20,
+          }}
+          placeholder="Search Customer"
+          onChangeText={(text: string) => {
+            var filterCust = customers.filter(
+              (item) =>
+                item.name?.toLowerCase().includes(text.toLowerCase()) ||
+                item.email?.toLowerCase().includes(text.toLowerCase())
+            );
+            setFilteredCustomers(filterCust);
+          }}
+        />
         {loading ? (
           <ActivityIndicator
             testID="loading-indicator"
@@ -63,11 +86,11 @@ export default function ZellerCustomerList({ navigation }: Props) {
             color={Colors.blue}
             style={styles.loader}
           />
-        ) : customers.length === 0 ? (
+        ) : filteredCustomers.length === 0 ? (
           <Text style={styles.noDataText}>No {role.toLowerCase()} found.</Text>
         ) : (
           <FlatList
-            data={customers}
+            data={filteredCustomers}
             renderItem={({ item }) => {
               return (
                 <UserItem

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1750960721502" clover="3.2.0">
-  <project timestamp="1750960721502" name="All files">
+<coverage generated="1750996345180" clover="3.2.0">
+  <project timestamp="1750996345180" name="All files">
     <metrics statements="34" coveredstatements="34" conditionals="16" coveredconditionals="13" methods="13" coveredmethods="13" elements="63" coveredelements="60" complexity="0" loc="34" ncloc="34" packages="7" files="11" classes="11"/>
     <package name="api">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="api.ts" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/api/api.ts">
+      <file name="api.ts" path="/Users/devanshvyas/Documents/Temp/src/api/api.ts">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="4" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
@@ -17,18 +17,18 @@
     </package>
     <package name="components">
       <metrics statements="7" coveredstatements="7" conditionals="10" coveredconditionals="8" methods="3" coveredmethods="3"/>
-      <file name="ProfileVIew.tsx" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/components/ProfileVIew.tsx">
+      <file name="ProfileVIew.tsx" path="/Users/devanshvyas/Documents/Temp/src/components/ProfileVIew.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="22" count="10" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
       </file>
-      <file name="RadioButton.tsx" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/components/RadioButton.tsx">
+      <file name="RadioButton.tsx" path="/Users/devanshvyas/Documents/Temp/src/components/RadioButton.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
         <line num="11" count="1" type="stmt"/>
         <line num="16" count="24" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
       </file>
-      <file name="UserItem.tsx" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/components/UserItem.tsx">
+      <file name="UserItem.tsx" path="/Users/devanshvyas/Documents/Temp/src/components/UserItem.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="9" count="9" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
@@ -36,26 +36,26 @@
     </package>
     <package name="constants">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="Colors.ts" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/constants/Colors.ts">
+      <file name="Colors.ts" path="/Users/devanshvyas/Documents/Temp/src/constants/Colors.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
       </file>
     </package>
     <package name="graphQL">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="queries.ts" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/graphQL/queries.ts">
+      <file name="queries.ts" path="/Users/devanshvyas/Documents/Temp/src/graphQL/queries.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
       </file>
     </package>
     <package name="screens">
       <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="5" methods="8" coveredmethods="8"/>
-      <file name="CustomerDetail.tsx" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/screens/CustomerDetail.tsx">
+      <file name="CustomerDetail.tsx" path="/Users/devanshvyas/Documents/Temp/src/screens/CustomerDetail.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="10" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
       </file>
-      <file name="ZellerCustomerList.tsx" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/screens/ZellerCustomerList.tsx">
+      <file name="ZellerCustomerList.tsx" path="/Users/devanshvyas/Documents/Temp/src/screens/ZellerCustomerList.tsx">
         <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
         <line num="22" count="15" type="stmt"/>
         <line num="23" count="15" type="stmt"/>
@@ -76,16 +76,16 @@
     </package>
     <package name="types">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="router.d.ts" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/types/router.d.ts">
+      <file name="router.d.ts" path="/Users/devanshvyas/Documents/Temp/src/types/router.d.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
-      <file name="zeller.d.ts" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/types/zeller.d.ts">
+      <file name="zeller.d.ts" path="/Users/devanshvyas/Documents/Temp/src/types/zeller.d.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="utils">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="stringutils.ts" path="/Users/devanshvyas/Documents/ReactNative/ZellerRN/src/utils/stringutils.ts">
+      <file name="stringutils.ts" path="/Users/devanshvyas/Documents/Temp/src/utils/stringutils.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="24" type="stmt"/>
       </file>
